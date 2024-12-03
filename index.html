@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+
+    
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="" class="nav-logo">LOGO</a>
+            <div class="nav-menu mynav" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#popular" class="nav-link">Foods</a></li>
+                    <li class="nav-item"><a href="#banner" class="nav-link">Banner</a></li>
+                    <li class="nav-item"><a href="#catalog" class="nav-link">Catalog</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-icons">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <span class="cart-toggle"><i class="fa-solid fa-cart-shopping"></i></span>
+                <i class="fa-solid fa-user"></i>
+                <span class="nav-toggle" id="nav-toggle"><i class="fa-solid fa-bars" style="color: black;"></i></span>
+            </div>
+        </nav>
+    </header>
+
+   
+    <section class="home" id="home">
+        <div class="box-container">
+            <div class="left-box content">
+                <h5 class="sub-title">Welcome Foodies</h5>
+                <h3 class="title">Your Website Title Here...</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, quibusdam. Vitae iusto accusantium ea quo assumenda vero repudiandae inventore dolores!</p>
+                <button class="btn btn-success">Order Now</button>
+            </div>
+            <div class="right-box image">
+                <img src="./images/home-img.png" alt="" class="home-img">
+                <img src="./images/home-parallax-img.png" alt="" class="home-para-img">
+            </div>
+        </div>
+    </section>
+
+    <section class="category">
+        <div id="owl-demo" class="owl-carousel owl-theme" style="transition: all 2s ease 0s">
+            <div class="item">
+                <a href="">
+                    <img src="./images/food/barger-1.jpg" alt="">
+                    <strong class="item-text">Bargar</strong>
+                </a>
+            </div>
+            <div class="item">
+                <a href="">
+                    <img src="./images/food/chicken-1.jpg" alt="">
+                    <strong class="item-text">Chicken</strong>
+                </a>
+            </div>
+            <div class="item">
+                <a href="">
+                    <img src="./images/food/pizza-1.jpg" alt="">
+                    <strong class="item-text">Pizza</strong>
+                </a>
+            </div>
+            <div class="item">
+                <a href="">
+                    <img src="./images/food/lunch-1.jpg" alt="">
+                    <strong class="item-text">Lunch</strong>
+                </a>
+            </div>
+            <div class="item">
+                <a href="">
+                    <img src="./images/food/dinner-1.jpg" alt="">
+                    <strong class="item-text">Dinner</strong>
+                </a>
+            </div>
+            <div class="item">
+                <a href="">
+                    <img src="./images/food/sweets-1.jpg" alt="">
+                    <strong class="item-text">Sweets</strong>
+                </a>
+            </div>
+            <div class="item">
+                <a href="">
+                    <img src="./images/food/others-1.jpg" alt="">
+                    <strong class="item-text">Others</strong>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="box-container">
+            <div class="left-box image">
+                <img src="./images/about-img.png" class="img-fluid" alt="">
+            </div>
+            <div class="right-box content">
+                <h5 class="sub-title">why choose us?</h5>
+                <h3 class="title">what's make our food delicious!</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet cum iste, aperiam veritatis sapiente odio excepturi! Aliquid blanditiis necessitatibus molestiae?</p>
+                <button class="btn btn-success">Read More</button>
+                <div class="about-card">
+                    <div class="about-card-item">
+                        <img src="./images/serv-1.png" alt="">
+                        <h5>Fast Delivery</h5>
+                    </div>
+                    <div class="about-card-item">
+                        <img src="./images/serv-2.png" alt="">
+                        <h5>Fresh Food</h5>
+                    </div>
+                    <div class="about-card-item">
+                        <img src="./images/serv-3.png" alt="">
+                        <h5>Best Quality</h5>
+                    </div>
+                    <div class="about-card-item">
+                        <img src="./images/serv-4.png" alt="">
+                        <h5>Support</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="popular" id="popular">
+        <div class="headeing">
+            <div class="sub-title">Popular Food</div>
+            <div class="title">Our Special Dishes</div>
+        </div>
+
+        <div class="food-nav">
+            <div class="nav-items">
+                <ul class="nav justify-content-center">
+                    <li data-filter="*" class="  food-filter-active">All</li>
+                    <li data-filter=".pizza" class="">Pizza</li>
+                    <li data-filter=".burger" class="nav-item">Burger</li>
+                    <li data-filter=".chicken" class="">Chicken</li>
+                    <li data-filter=".sweets-cates" class="">Sweets-Cakes</li>
+                    <li data-filter=".lunch" class="">Lunch</li>
+                    <li data-filter=".dinner" class="">Dinner</li>
+                    <li data-filter=".others" class="">Others</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="food-all-items">
+            <div class="item pizza">
+                <img src="./images/food/pizza-1.jpg" alt="">
+                <div class="item-content">
+                    <strong class="food-title">Food Title Here</strong>
+                    <div> <strong>$50.00</strong> <span>$60.00</span><a href=""> Add To Cart</a></div>
+                </div>
+            </div>
+            <div class="item burger">
+                <img src="./images/food/barger-1.jpg" alt="">
+                <div class="item-content">
+                    <strong class="food-title">Food Title Here</strong>
+                    <div> <strong>$50.00</strong> <span>$60.00</span><a href=""> Add To Cart</a></div>
+                </div>
+            </div>
+            <div class="item chicken">
+                <img src="./images/food/chicken-1.jpg" alt="">
+                <div class="item-content">
+                    <strong class="food-title">Food Title Here</strong>
+                    <div> <strong>$50.00</strong> <span>$60.00</span><a href=""> Add To Cart</a></div>
+                </div>
+            </div>
+            <div class="item sweets-cates">
+                <img src="./images/food/sweets-1.jpg" alt="">
+                <div class="item-content">
+                    <strong class="food-title">Food Title Here</strong>
+                    <div> <strong>$50.00</strong> <span>$60.00</span><a href=""> Add To Cart</a></div>
+                </div>
+            </div>
+            <div class="item lunch">
+                <img src="./images/food/lunch-1.jpg" alt="">
+                <div class="item-content">
+                    <strong class="food-title">Food Title Here</strong>
+                    <div> <strong>$50.00</strong> <span>$60.00</span><a href=""> Add To Cart</a></div>
+                </div>
+            </div>
+            <div class="item dinner">
+                <img src="./images/food/dinner-1.jpg" alt="">
+                <div class="item-content">
+                    <strong class="food-title">Food Title Here</strong>
+                    <div> <strong>$50.00</strong> <span>$60.00</span><a href=""> Add To Cart</a></div>
+                </div>
+            </div>
+            <div class="item others">
+                <img src="./images/food/others-1.jpg" alt="">
+                <div class="item-content">
+                    <strong class="food-title">Food Title Here</strong>
+                    <div> <strong>$50.00</strong> <span>$60.00</span><a href=""> Add To Cart</a></div>
+                </div>
+            </div>
+            <div class="item pizza">
+                <img src="./images/food/pizza-2.jpg" alt="">
+                <div class="item-content">
+                    <strong class="food-title">Food Title Here</strong>
+                    <div> <strong>$50.00</strong> <span>$60.00</span><a href=""> Add To Cart</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="banner" id="banner">
+        <div class="row-banner">
+            <div class="row-banner-content">
+                <div class="sub-title">Double Cheese</div>
+                <div class="title">Burger</div>
+                <p>Lorem ipsum dolor sit amet. </p>
+                <button class="btn btn-success">Order Now</button>
+            </div>
+        </div>
+        <div class="row items-banner">
+            <div class="item col-sm-6 col-md-6 col-lg-4">
+                <div class="item-wrap">
+                    <img src="./images/my-banner-1.jpg" alt="">
+                    <div class="banner-content">
+                        <h4>Special Offer</h4>
+                        <h3>Upto 30% Off</h3>
+                        <button class="btn btn-success">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item col-sm-6 col-md-6 col-lg-4">
+                <div class="item-wrap">
+                    <img src="./images/my-banner-8.jpg" alt="">
+                    <div class="banner-content">
+                        <h4>Special Offer</h4>
+                        <h3>Upto 30% Off</h3>
+                        <button class="btn btn-success">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item col-sm-6 col-md-6 col-lg-4">
+                <div class="item-wrap">
+                    <img src="./images/my-banner-3.jpg" alt="">
+                    <div class="banner-content">
+                        <h4>Special Offer</h4>
+                        <h3>Upto 30% Off</h3>
+                        <button class="btn btn-success">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="catalog" id="catalog">
+        <div class="heading">
+            <div class="sub-title">Our Catalog</div>
+            <div class="title">Top Dishes Today</div>
+        </div>
+        <div class="row">
+            <div class="item col-sm-6 col-md-6 col-lg-4">
+                <div class="catalog-wrap">
+                    <img src="./images/food/pizza-2.jpg" alt="">
+                    <div class="cata-ontent">
+                        <h4>Pizza</h4>
+                        <h5>$5.00</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="item col-sm-6 col-md-6 col-lg-4">
+                <div class="catalog-wrap">
+                    <img src="./images/food/barger-2.jpg" alt="">
+                    <div class="cata-ontent">
+                        <h4>Burger</h4>
+                        <h5>$2.00</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="item col-sm-6 col-md-6 col-lg-4">
+                <div class="catalog-wrap">
+                    <img src="./images/food/chicken-2.jpg" alt="">
+                    <div class="cata-ontent">
+                        <h4>Chicken</h4>
+                        <h5>$5.00</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="item col-sm-6 col-md-6 col-lg-4">
+                <div class="catalog-wrap">
+                    <img src="./images/food/sweets-2.jpg" alt="">
+                    <div class="cata-ontent">
+                        <h4>Sweets</h4>
+                        <h5>$3.00</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="item col-sm-6 col-md-6 col-lg-4">
+                <div class="catalog-wrap">
+                    <img src="./images/food/lunch-2.jpg" alt="">
+                    <div class="cata-ontent">
+                        <h4>Lunch</h4>
+                        <h5>$5.00</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="item col-sm-6 col-md-6 col-lg-4">
+                <div class="catalog-wrap">
+                    <img src="./images/food/dinner-2.jpg" alt="">
+                    <div class="cata-ontent">
+                        <h4>Dinner</h4>
+                        <h5>$7.00</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="heading">
+            <div class="sub-title">Contact Us Today</div>
+            <div class="title">Fast Come Fast Serve</div>
+        </div>
+        <div class="row">
+            <div class="item col-sm-6 col-md-6 col-lg-4">
+                <div class="item-wrap">
+                    <img src="./images/icon-1.png" alt="">
+                    <h4>7.00am to 10:00pm</h4>
+                </div>
+            </div>
+            <div class="item col-sm-6 col-md-6 col-lg-4">
+                <div class="item-wrap">
+                    <img src="./images/icon-2.png" alt="">
+                    <h4>7.00am to 10:00pm</h4>
+                </div>
+            </div>
+            <div class="item col-sm-6 col-md-6 col-lg-4">
+                <div class="item-wrap">
+                    <img src="./images/icon-3.png" alt="">
+                    <h4>7.00am to 10:00pm</h4>
+                </div>
+            </div>
+        </div>
+        <form class="form" id="form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" class="form-control" id="address" placeholder="Your address">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" class="form-control" id="email" placeholder="Your valid email">
+            </div>
+            <div class="form-group">
+                <label for="mobile">Mobile No</label>
+                <input type="text" class="form-control" id="mobile" placeholder="Your mobile number">
+            </div>
+            <div class="form-group">
+                <label for="food-name">Food's Name</label>
+                <input type="text" class="form-control" id="food-name" placeholder="You want to buy">
+            </div>
+            <div class="form-group">
+                <label for="quantity">Quantity</label>
+                <input type="text" class="form-control" id="quantity" placeholder="Quantity you want to buy">
+            </div>
+            <div class="form-group">
+                <label for="pick-time">Pick Time</label>
+                <input type="datetime-local" class="form-control" id="pick-time">
+            </div>
+            <div class="form-group">
+                <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14608.036944846204!2d90.36710721855735!3d23.7470500444676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b33cffc3fb%3A0x4a826f475fd312af!2z4Kan4Ka-4Kao4Kau4Kao4KeN4Kah4Ka_LCDgpqLgpr7gppXgpr4gMTIwNQ!5e0!3m2!1sbn!2sbd!4v1648300944290!5m2!1sbn!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <input type="submit" value="Confirm Order" class="submit-btn btn btn-success">
+        </form>
+    </section>
+
+    <section class="footer bg-color">
+        <div class="heading">
+            <div class="sub-title">Subscribe Us</div>
+            <div class="title">For More Update</div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Recipient's username">
+                <div class="input-group-append">
+                    <span class="input-group-text btn btn-success" id="basic-addon2">Subscribe</span>
+                </div>
+            </div>
+            <div class="footer-container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 col-lg-3">
+                        <div class="footer-item">
+                            <h4>Foods Items</h4>
+                                <ul>
+                                    <li><a href="#">Pizza</a></li>
+                                    <li><a href="#">Burger</a></li>
+                                    <li><a href="#">Chicken</a></li>
+                                    <li><a href="#">Sweets</a></li>
+                                    <li><a href="#">Lunch</a></li>
+                                    <li><a href="#">Dinner</a></li>
+                                    <li><a href="#">Others</a></li>
+                                </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-lg-3">
+                        <div class="footer-item">
+                            <h4>Header</h4>
+                                <ul>
+                                    <li><a href="#home">Home</a></li>
+                                    <li><a href="#about">About</a></li>
+                                    <li><a href="#popular">Foods</a></li>
+                                    <li><a href="#banner">Banner</a></li>
+                                    <li><a href="#catalog">Catalog</a></li>
+                                    <li><a href="#contact">Contact</a></li>
+                                </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-lg-3">
+                        <div class="footer-item">
+                            <h4>Others</h4>
+                                <ul>
+                                    <li><a href="">Accout</a></li>
+                                    <li><a href="">Cart</a></li>
+                                    <li><a href="">Order</a></li>
+                                    <li><a href="">Terms of use</a></li>
+                                    <li><a href="">Privacy policy</a></li>
+                                </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-lg-3">
+                        <div class="footer-item">
+                            <h4>Service Hour</h4>
+                            <p>Everyday 7:00am - 10:00pm</p>
+                            <br>
+                            <div class="social">
+                                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                <a href=""><i class="fa-brands fa-pinterest"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+               
+                
+                
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  
+ 
+
+    <script src="./js/main.js"></script>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+#about{
+    .content{
+        .about-card{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+            //gap: 1.5rem;
+            &-item{
+                width: 220px;
+                height: 70px;
+                margin: 7px 0;
+                margin-right: 13px;
+                display: flex;
+                align-items: center;
+                background-color: white;
+                border-radius: 7px;
+                box-shadow: $boxShadow;
+                img,h5{
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1172px) {
+    #about{
+        .about-card-item{
+            width: 100% !important;
+        }
+    }
+}

@@ -1,0 +1,84 @@
+#popular{
+    .headeing{
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .food-nav{
+        background-color: cornflowerblue;
+        li{
+            padding: 5px 10px;
+            cursor: pointer;
+            &:hover{
+                color: brown;
+            }
+        }
+    }
+
+    .food-filter-active{
+        color: brown;
+        font-weight: bold;
+    }
+    .item{
+        width: 252px;
+        height: 260px;
+        background-color: #eeecec;
+        margin: 8px;
+        display: inline-block;
+        text-align: center;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 200px;
+            cursor: pointer;
+            overflow: hidden;
+            transition: .3s;
+            &:hover{                
+                //transform: scaleX(1.1);
+               transform: scale(1.6);
+            }
+        }
+        .food-title{
+            font-size: 20px;
+        }
+        span{
+            text-decoration: line-through;
+            font-size: 13px;
+        }
+        a{
+            background-color: #30925c;
+            margin-left: 20px;
+            padding: 2px 5px;
+            border-radius: 4px;
+            color: white;
+            &:hover{
+                background-color: darkblue;
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+}

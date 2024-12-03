@@ -1,0 +1,28 @@
+#catalog{
+    .heading{
+        text-align: center;
+    }
+    .item{
+        .catalog-wrap{
+            height: 120px;
+            margin: 10px 0;
+            background-color: $itemBgColor;
+            display: flex;
+            align-items: center;
+            border-radius: 5px;
+            img{
+                width: 120px;
+                height: 120px;
+                padding: 8px;
+            }
+           .cata-ontent{
+               padding: 10px;
+           }
+
+           &:hover{
+               background-color: $bgHoverColor;
+               color: white;
+           }
+        }
+    }
+}

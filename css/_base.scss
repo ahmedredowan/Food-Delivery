@@ -1,0 +1,82 @@
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    color: black;
+    background-color: white;
+    transform: .5s;
+    a{
+        color: black;
+        text-decoration: none;
+        &:hover{
+            color: orangered;
+        }
+    }
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    i{
+        cursor: pointer;
+    }
+    section{
+        padding: 2rem 10%;
+      //  border: 1px solid red;
+    }
+    .bg-color{
+        background-color: #F7F7F7;
+    }
+}
+
+
+/*------------------Variables------*/
+$headerHeight: 45px;
+$boxShadow:0 1rem 1rem rgba(0,0,0,.05);
+$itemBgColor: #eeecec;
+$bgHoverColor: darkblue;
+.box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    .left-box{
+        margin-right: 10px;
+    }
+    .right-box{
+        margin-left: 10px;
+    }
+}
+
+.title{
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.sub-title{
+    font-size: 1.5rem;
+}
+.btn{
+    color: white;
+    font-weight: bold;
+    &:hover{
+        background-color: darkblue;
+    }
+}
+.content{
+    padding: 25px 0;
+}
+.heading{
+    text-align: center;
+}
+.item-wrap{
+    margin: 10px 0;
+    background-color: $itemBgColor;
+    border-radius: 5px;
+}

@@ -1,0 +1,44 @@
+.footer{
+    .heading{
+       .input-group{
+           max-width: 500px;
+           margin: 10px auto;
+           cursor: pointer;
+           input{
+               outline: none;
+           }
+       }
+    }
+
+   
+
+    .footer-item{
+        line-height: 40px;
+        a:hover{
+            font-weight: bold;
+        }
+
+        .social{
+            a{
+                color: white;
+                background-color: rgb(6, 92, 6);
+                font-size: 25px;
+                padding: 6px 10px;
+                border-radius: 5px;
+                margin: 10px 5px;
+                &:hover{
+                    background-color: darkcyan;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:780px) {
+    #footer{
+        .footer-container{
+            grid-template-columns: auto auto;
+        }
+    }
+}
